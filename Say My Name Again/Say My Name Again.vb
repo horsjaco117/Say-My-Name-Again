@@ -2,14 +2,12 @@
 'Spring 2025
 'RCET 2265
 'SayMyName
+'URL: https://github.com/horsjaco117/Say-My-Name-Again
 
 Option Explicit On
 Option Strict On
 
-Module Module1
-
-
-
+Module sayMyNameAgain
     Sub Main()
 
         Dim userInput As String
@@ -19,20 +17,19 @@ Module Module1
 
         userInput = Console.ReadLine() 'give it name
 
-        If userInput = "Jacob" Then
+        If userInput = "Jacob" Then 'Curated responses only for special names
+            Console.WriteLine()
             Console.WriteLine("Hello There Handsome!")
-        ElseIf userInput = "Emily" Then
+        ElseIf userInput = "Emily" Then 'Response for Emily
+            Console.WriteLine()
             Console.WriteLine("How's it going Emily?")
-        ElseIf userInput = "Joe" Then
+        ElseIf userInput = "Joe" Then 'Response for Joe
+            Console.WriteLine()
             Console.WriteLine("Joe Mama!!!")
         Else
-            Console.WriteLine()
-            Console.WriteLine("Hello there " & userInput)
+            Console.WriteLine() 'Any other name will show generic salutation
+            Console.WriteLine("Hello there " & userInput & ".")
         End If
-
-        Console.WriteLine()
-
-
 
     End Sub
 
